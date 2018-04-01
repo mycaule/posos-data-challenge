@@ -1,0 +1,35 @@
+{
+  "name": "posos-data-challenge",
+  "version": "1.0.0",
+  "description": "https://challengedata.ens.fr/en/challenge/33/predict_the_expected_answer.html",
+  "main": "train.js",
+  "scripts": {
+    "start": "node train.js",
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mycaule/posos-data-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mycaule/posos-data-challenge/issues"
+  },
+  "homepage": "https://github.com/mycaule/posos-data-challenge#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "xo": "^0.20.3"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false
+  },
+  "ava": {
+    "snapshotDir": "snapshots"
+  },
+  "dependencies": {
+    "csvdata": "^1.4.0",
+    "shallow-equal": "^1.0.0"
+  }
+}
