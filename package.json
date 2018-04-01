@@ -4,8 +4,10 @@
   "description": "https://challengedata.ens.fr/en/challenge/33/predict_the_expected_answer.html",
   "main": "train.js",
   "scripts": {
-    "start": "node train.js",
-    "test": "xo && ava"
+    "_train": "node _train.js",
+    "_test": "node _test.js",
+    "_diff": "node _diff.js",
+    "test": "xo"
   },
   "repository": {
     "type": "git",
@@ -18,18 +20,16 @@
   },
   "homepage": "https://github.com/mycaule/posos-data-challenge#readme",
   "devDependencies": {
-    "ava": "^0.25.0",
     "xo": "^0.20.3"
   },
   "xo": {
     "space": true,
     "semicolon": false
   },
-  "ava": {
-    "snapshotDir": "snapshots"
-  },
   "dependencies": {
     "csvdata": "^1.4.0",
-    "shallow-equal": "^1.0.0"
+    "dialogflow": "^0.2.0",
+    "shallow-equal": "^1.0.0",
+    "throttled-queue": "^1.0.5"
   }
 }
