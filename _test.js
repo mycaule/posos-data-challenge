@@ -30,7 +30,7 @@ const detectIntent = (projectId, sessionId, queries = []) => {
             if (result.intent) {
               console.log(`${query.ID};${parseInt(result.intent.displayName.replace('pipo-', ''), 10)}`)
             } else {
-              console.log(`${query.ID};${-1}`)
+              console.log(`${query.ID};${1}`)
             }
 
             response.queryResult.outputContexts.forEach(context => {
@@ -42,7 +42,7 @@ const detectIntent = (projectId, sessionId, queries = []) => {
               contexts: response.queryResult.outputContexts
             }
           } else {
-            console.log(`${query.ID};${-1}`)
+            console.log(`${query.ID};${1}`)
           }
 
           return sessionClient.detectIntent(request)

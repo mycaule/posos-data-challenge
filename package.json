@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "csvdata": "^1.4.0",
-    "dialogflow": "^0.2.0",
+    "dialogflow": "^0.5.0",
     "shallow-equal": "^1.0.0",
     "throttled-queue": "^1.0.5"
   }
